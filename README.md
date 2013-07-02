@@ -1,6 +1,7 @@
 # CakePHP Markdown Plugin
 
-Plugin for parsing markdown text into HTML. Behavior and helper can be used
+Plugin for parsing [markdown text](http://daringfireball.net/) into HTML. Behavior and helper can be used.
+It uses PHP [markdown](https://github.com/michelf/php-markdown) as vendor.
 
 
 ## Requirements
@@ -8,7 +9,7 @@ Plugin for parsing markdown text into HTML. Behavior and helper can be used
 [CakePHP v2.x](https://github.com/cakephp/cakephp)   
 
 
-## Install & Config
+## Install
 
 Checkout the plugin into Plugin folder with submodules (Vendor)
 
