@@ -2,6 +2,7 @@
 
 App::uses('AppHelper', 'View/Helper');
 App::import('Vendor', 'Markdown.Markdown/Michelf/Markdown');
+App::import('Vendor', 'Markdown.Markdown/Michelf/MarkdownExtra');
 
 /**
  * Markdown Helper
@@ -11,7 +12,7 @@ App::import('Vendor', 'Markdown.Markdown/Michelf/Markdown');
 class MarkdownParseHelper extends AppHelper {
 
 	public function afterRenderFile($viewFile, $content) {
-		$parser = new Michelf\Markdown;
+		$parser = new Michelf\MarkdownExtra;
 		$html = $parser->defaultTransform($content);
 		return $html;
 	}

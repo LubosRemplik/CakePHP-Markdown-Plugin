@@ -2,6 +2,7 @@
 
 App::uses('ModelBehavior', 'Model');
 App::import('Vendor', 'Markdown.Markdown/Michelf/Markdown');
+App::import('Vendor', 'Markdown.Markdown/Michelf/MarkdownExtra');
 
 /**
  * Markdown Behavior
@@ -26,7 +27,7 @@ class MarkdownBehavior extends ModelBehavior {
 		foreach ($field as $k => $val) {
 			if (!empty($Model->data[$Model->alias][$val])) {
 				$text = $Model->data[$Model->alias][$val];
-				$parser = new Michelf\Markdown;
+				$parser = new Michelf\MarkdownExtra;
 				$html = $parser->defaultTransform($text);
 				$Model->data[$Model->alias][$val] = $html;
 			}
