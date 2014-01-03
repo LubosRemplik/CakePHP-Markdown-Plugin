@@ -6,11 +6,11 @@ App::import('Vendor', 'Markdown.Markdown/Michelf/MarkdownExtra');
 
 /**
  * Markdown Behavior
- * 
+ *
  * Parsing markdown text to html in beforeSave
  **/
 class MarkdownBehavior extends ModelBehavior {
-	
+
 	public function setup(Model $Model, $config = array()) {
 		$settings = array_merge(array(
 			'field' => 'content'
@@ -18,7 +18,7 @@ class MarkdownBehavior extends ModelBehavior {
 		$this->settings[$Model->alias] = $settings;
 	}
 
-	public function beforeSave(Model $Model) {
+	public function beforeSave(Model $Model, $options = array()) {
 		extract($this->settings[$Model->alias]);
 
 		if (!is_array($field)) {

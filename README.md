@@ -6,7 +6,7 @@ It uses PHP [markdown](https://github.com/michelf/php-markdown) as vendor.
 
 ## Requirements
 
-[CakePHP v2.x](https://github.com/cakephp/cakephp)   
+[CakePHP v2.4.x](https://github.com/cakephp/cakephp)
 
 
 ## Install
@@ -38,8 +38,8 @@ Using the MarkdownParseHelper to parse whole views (layouts, elements, views)
 		'Markdown.MarkdownParse'
 	);
 
-Using the MarkdownBehavir in model
-	
+Using the MarkdownBehavior in model
+
 	<?php
 	// in model
 	public $actsAs = array(
