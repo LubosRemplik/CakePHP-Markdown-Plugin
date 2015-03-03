@@ -1,8 +1,8 @@
 <?php
 
 App::uses('ModelBehavior', 'Model');
-App::import('Vendor', 'Markdown.Markdown/Michelf/Markdown');
-App::import('Vendor', 'Markdown.Markdown/Michelf/MarkdownExtra');
+App::import('Vendor', 'Markdown.Markdown/Michelf/Markdown.inc');
+App::import('Vendor', 'Markdown.Markdown/Michelf/MarkdownExtra.inc');
 
 /**
  * Markdown Behavior
